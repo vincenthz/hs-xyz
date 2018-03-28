@@ -16,9 +16,9 @@ build: ghc-8.2 os=osx
 package: '.'
 
 # extra builds
-hlint: no
-weeder: no
-coverall: false
+hlint: disabled
+weeder: disabled
+coverall: disabled
 
 # travis extra
 # travis-apt-addon: packagename
