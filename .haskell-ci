@@ -1,0 +1,25 @@
+# compiler supported and their equivalent LTS
+compiler: ghc-8.2 lts-11.2
+
+# gitdep: name location commit
+
+# options
+# option: alias x=y z=v
+
+# builds
+# recognized simple options: nohaddock allow-newer allowed-failure
+# kvs options: flag=pkg:flagname extradep=package-version gitdep=name
+build: ghc-8.2 os=windows,linux
+build: ghc-8.2 os=osx
+
+# packages
+package: '.'
+
+# extra builds
+hlint: no
+weeder: no
+coverall: false
+
+# travis extra
+# travis-apt-addon: packagename
+# travis-tests: post-script
