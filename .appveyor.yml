@@ -10,7 +10,7 @@ environment:
   global:
     STACK_ROOT: "C:\\SR"
   matrix:
-    - { BUILD: "ghc-8.2", STACKCMD: "stack --no-terminal build --install-ghc --coverage --test --bench --no-run-benchmarks --haddock --no-haddock-deps", STACKCFG: "{ resolver: lts-11.2, packages: [ '.' ], extra-deps: [], flags: {} }", STACKURL: "https://www.stackage.org/stack/windows-x86-64" }
+    - { BUILD: "ghc-8.2", STACKCMD: "stack --no-terminal build --install-ghc --coverage --test --bench --no-run-benchmarks --haddock --no-haddock-deps", STACKCFG: "{ resolver: lts-11.2, packages: [ '.' ], extra-deps: [], flags: {} }", STACKURL: "https://www.stackage.org/stack/windows-x86_64" }
 
 matrix:
   fast_finish: true
